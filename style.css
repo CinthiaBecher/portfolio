@@ -1,0 +1,133 @@
+/*----GOOGLE FONTS----*/
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,600;1,700&display=swap');
+
+
+/*===================== VARIANTS =====================*/
+:root{
+    --header-height: 3rem;
+
+    /*----COLORS---*/
+    --first-color:  rgb(226, 175, 255);
+    --first-color-second:  rgb(255, 175, 234);
+    --first-color-alt:  rgb(175, 199, 255);
+    --first-color-lighter: ;
+    --title-color: #000;
+    --text-color: #000;
+    --text-color-light: rgb(218, 218, 218);
+    --input-color: #f5f5f6;
+    --body-color: #ffff;
+    --container-color: rgb(226, 175, 255);
+
+    /*----TYPOGRAPHY---*/
+    --body-font:'Inter Tight', sans-serif;
+
+    --big-font-size: 32px;
+    --h1-font-size: 24px;
+    --h2-font-size: 20px;
+    --h3-font-size: 18px;
+    --normal-font-size: 14px;
+    --small-font-size: 12px;
+    --smaller-font-size: 10px;
+
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*---MARIGINS BOTTOM ---*/
+    --mb-0-25: 4px;
+    --mb-0-5: 8px;
+    --mb-0-75: 12px;
+    --mb-1: 16px;
+    --mb-1-5: 24px;
+    --mb-2: 32px;
+    --mb-2-5: 40px;
+    --mb-3: 48px;
+
+    /*---Z INDEX---*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 100;
+  
+}
+
+/*---for larger devices---*/
+@media screen and (min-width:968px) {
+    :root{
+        --big-font-size: 3rem; /*mudar pra px*/
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem; 
+    }
+}
+
+/*===================== BASE =====================*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color)
+}
+
+h1,h2,h3,h4{
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*===================== REUSABLE CSS CLASSES =====================*/
+.section{
+    padding: 2rem 0 4rem;
+}
+
+.section__title{
+    font-size: var(--h1-font-size);
+}
+
+.section_subtitle{
+    display:block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+
+}
+
+.section__title, 
+.section_subtitle{
+    text-align: center;
+}
+
+/*===================== LAYOUT =====================*/
+.container{
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid{
+    display: grid; /*?????????????????????????????????????????????????????????*/
+    gap: 1.5rem;
+}

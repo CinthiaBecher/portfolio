@@ -559,6 +559,10 @@ img{
     color:var(--text-color);
 }
 
+.content__left{
+    text-align: end;
+}
+
 .qualification__rounder{
     display:inline-block;
     width: 13px;    
@@ -964,6 +968,10 @@ img{
 
         .qualification__sections {
             grid-template-columns: .5fr
+        }
+
+        .qualification__data{
+            grid-template-columns: 270px max-content 270px;
         }
         
         .portfolio__img {

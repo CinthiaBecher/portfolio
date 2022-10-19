@@ -636,6 +636,18 @@ img{
     transform: translateX(.25rem);
 }
 
+.portfolio__button__simple{
+    background-color: var(--body-color);
+    color: var(--first-color);
+    font-size: var(--small-font-size);
+}
+
+.portfolio__button__simple:hover{
+    background-color: var(--body-color);
+    color: var(--first-color);
+    text-decoration: underline;
+}
+
 .swiper-button-prev::after, 
 .swiper-button-next::after{
     content: '';
